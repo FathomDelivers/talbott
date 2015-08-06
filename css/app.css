@@ -3,17 +3,19 @@
 /* - - - - 1 main-banner     - - - - - - */
 /* - - - - 2 photo-area      - - - - - - */
 /* - - - - 3 list-area       - - - - - - */
-/* - - - - 4 feature-area    - - - - - - */
-/* - - - - 5 sidebar         - - - - - - */
+/* - - - - 4 quote-area      - - - - - - */
+/* - - - - 5 feature-area    - - - - - - */
+/* - - - - 6 sidebar         - - - - - - */
 /*–––––––––––––––––––––––––––––––––––––––*/
 
 /* 0 information 
 ––––––––––––––––––––––––––––––––––––––––––*/
 /* - - - - main color chart - - - - - - - */
-/* - - - - brand-primary:#970001; - - - - */
-/* - - - - brand-secondary:#7C0F0B; - - - */
-/* - - - - neutral:#EDE9E6; - - - - - - - */
-/* - - - - form background:#f9f8f4; - - - */
+/* - - - - brand-primary:#89A3D4; - - - - */
+/* - - - - brand-secondary:#011C4B; - - - */
+/* - - - - neutral:#E3E3E5; - - - - - - - */
+/* - - - - purple-primary:#3D385B;  - - */
+/* - - - - purple-secondary:#9A96AD;  - - */
 /*––––––––––––––––––––––––––––––––––––––––*/
 
 /* 1 main-banner 
@@ -21,12 +23,103 @@
 
 /* 2 photo-area
 ––––––––––––––––––––––––––––––––––––––––––*/
+.photo-area {
+	color:#011C4B;	
+	text-align: center;
+}
+.photo-area .outer {
+	background-color:#fafafa;
+	background-repeat: no-repeat;
+	height: 256px;
+	padding:141px 0px 0px 0px;
+}
+.photo-area .outer .banner {
+	background-color: rgba(204,225,255,0.8);
+	padding:16px 0 8px 0;
+}
+.photo-area .form {
+	color:#fff;
+	background-color: #011C4B;
+
+}
 
 /* 3 list-area
 ––––––––––––––––––––––––––––––––––––––––––*/
 
-/* 4 feature-area
+/* 4 quote-area
 ––––––––––––––––––––––––––––––––––––––––––*/
+.quote-area {
+	background-color:#E3E3E5;
+	padding:32px 0 12px 0;
+	text-align: center;
+}
+.quote-area p {
+	font-family: Georgia, serif;
+	font-size: 22px;
+}
+.quote-area p span {
+	font-size: 18px;
+}
+.quote-area p a {
+	font-size: 14px;
+	text-decoration: underline;
+	color:#000;
+	}.quote-area p a:hover {
+		color:#89A3D4;
+	}
+/* 5 feature-area
+––––––––––––––––––––––––––––––––––––––––––*/
+.feature-area {
+	background-color: #9A96AD;
+	color:#fff;
+}
+.feature-area .circle {
+	text-align: center;
+	margin:24px auto 12px auto;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background-color: #3D385B;
+	color:#fff;
+}
+.feature-area .circle i {
+	margin:18px 18px;
+}
+.feature-area .about,
+.feature-area .location,
+.feature-area .twitter {
+	border-right:1px solid rgba(255,255,255,0.8);
+}
+.feature-area h4 {
+	text-align: center;
+}
+.feature-area a {
+	color:#3D385B;
+	font-weight: 600;
+	text-decoration: underline;	
+}
 
-/* 5 sidebar
+/* location––––––––––––––––––––––––––––––––*/
+.feature-area .location ul {
+	margin-left: -20px;
+}
+.feature-area .location ul li,
+.feature-area .twitter ul li {
+	line-height: 1.5em;
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+.feature-area .location ul li:before {
+	font-family: 'fontawesome';
+	margin-right: 6px;
+	margin-left: -20px;
+	content:"\f041";
+}
+
+.feature-area .photo {
+	text-align: center;
+}
+
+
+/* 6 sidebar
 ––––––––––––––––––––––––––––––––––––––––––*/
