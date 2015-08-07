@@ -6,6 +6,7 @@
 /* - - - - 4 quote-area      - - - - - - */
 /* - - - - 5 feature-area    - - - - - - */
 /* - - - - 6 sidebar         - - - - - - */
+/* - - - - 7 media queries   - - - - - - */
 /*–––––––––––––––––––––––––––––––––––––––*/
 
 /* 0 information 
@@ -30,21 +31,51 @@
 .photo-area .outer {
 	background-color:#fafafa;
 	background-repeat: no-repeat;
-	height: 256px;
-	padding:141px 0px 0px 0px;
+	height: 196px;
+	margin:0 0 18px 0;
+	padding:96px 0px 0px 0px;
 }
 .photo-area .outer .banner {
 	background-color: rgba(204,225,255,0.8);
 	padding:16px 0 8px 0;
 }
-.photo-area .form {
+.photo-area .form-container {
 	color:#fff;
-	background-color: #011C4B;
+	text-align: left;
+	background-color: #89A3D4;
+	padding:12px;
+	height: 196px;
+}
+.photo-area .form-container input {
+	border-radius: 0;
+	font-family: 'Georgia',serif;
+	font-style: italic !important;
+	margin-bottom: 6px;
+}
+.photo-area .form-container ::-webkit-input-placeholder, 
+.photo-area .form-container :-moz-placeholder,
+.photo-area .form-container ::-moz-placeholder,
+.photo-area .form-container :-ms-input-placeholder, {
+    font-family: 'Georgia',serif;
+    font-style: italic !important;
+}
 
+.photo-area .form-container .btn {
+	background-color: #3D385B;
+	color:#fff;
 }
 
 /* 3 list-area
 ––––––––––––––––––––––––––––––––––––––––––*/
+.list-area {
+	margin: 24px 0 24px 0;
+}
+
+.list-area .bkg {
+	background-color: #000;
+	min-width:100px;
+	min-height:165px;
+}
 
 /* 4 quote-area
 ––––––––––––––––––––––––––––––––––––––––––*/
@@ -99,6 +130,14 @@
 	text-decoration: underline;	
 }
 
+.feature-area .row {
+    display: table;
+}
+.feature-area [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
 /* location––––––––––––––––––––––––––––––––*/
 .feature-area .location ul {
 	margin-left: -20px;
@@ -120,6 +159,47 @@
 	text-align: center;
 }
 
+.feature-area .twitter ul {
+	margin-left: -40px;
+}
 
 /* 6 sidebar
 ––––––––––––––––––––––––––––––––––––––––––*/
+.list-area .sidebar {
+	background-color: #E3E3E5;
+	padding:12px 18px;
+}
+.list-area .sidebar ul {
+	margin-left: -20px;
+}
+.list-area .sidebar a {
+	color:#89A3D4;
+}
+.list-area .sidebar hr {
+	border:1px solid #011C4B;
+}
+
+/* 7 media queries
+––––––––––––––––––––––––––––––––––––––––––*/
+@media screen and (max-width:990px) { 
+/* - - - - 1 main-banner     - - - - - - */
+/* - - - - 2 photo-area      - - - - - - */
+/* - - - - 3 list-area       - - - - - - */
+/* - - - - 4 quote-area      - - - - - - */
+/* - - - - 5 feature-area    - - - - - - */
+	.feature-area .row {
+	    display:block;
+	}
+	.feature-area [class*="col-"] {
+	    float: none;
+	    display: block;
+	}
+	.feature-area .about,
+	.feature-area .location,
+	.feature-area .twitter {
+		border-right:none;
+		border-bottom:1px solid rgba(255,255,255,0.8);
+	}
+/* - - - - 6 sidebar         - - - - - - */
+	
+}
